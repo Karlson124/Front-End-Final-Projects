@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPA Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+  <header class="header">
+    <img src="images/logo.png" class="header-logo" alt="Logo">
+    <div class="header-main">
+      <h1>Computer Science Department</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="description.html">Program Description</a></li>
+          <li><a href="TA.html">TA Application</a></li>
+          <li><a href="GPA.html" class="active">GPA Calculator</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- GPA Calculator Section -->
+  <div class="gpa-container">
+    <h1 class="gpa-title">Find your GPA!</h1>
+    <p class="description">Enter the credit hours and letter grade for each course. At least 2 courses are required.</p>
+
+    <div class="gpa-form">
+
+      <!-- Header Row -->
+      <div class="row header-row">
+        <div class="label-col"></div>
+        <div class="credit-col"><strong>Credit Hours</strong></div>
+        <div class="grade-col"><strong>Grade</strong></div>
+      </div>
+
+      <!-- Course Inputs -->
+      <div class="row">
+        <div class="label-col"><label>Course 1:</label></div>
+        <div class="credit-col"><input type="text" class="credit"></div>
+        <div class="grade-col"><input type="text" class="grade"></div>
+      </div>
+
+      <div class="row">
+        <div class="label-col"><label>Course 2:</label></div>
+        <div class="credit-col"><input type="text" class="credit"></div>
+        <div class="grade-col"><input type="text" class="grade"></div>
+      </div>
+
+      <div class="row">
+        <div class="label-col"><label>Course 3:</label></div>
+        <div class="credit-col"><input type="text" class="credit"></div>
+        <div class="grade-col"><input type="text" class="grade"></div>
+      </div>
+
+      <div class="row">
+        <div class="label-col"><label>Course 4:</label></div>
+        <div class="credit-col"><input type="text" class="credit"></div>
+        <div class="grade-col"><input type="text" class="grade"></div>
+      </div>
+
+      <div class="row">
+        <div class="label-col"><label>Course 5:</label></div>
+        <div class="credit-col"><input type="text" class="credit"></div>
+        <div class="grade-col"><input type="text" class="grade"></div>
+      </div>
+
+      <!-- GPA Output -->
+      <div class="row">
+        <div class="label-col"><label>Avg GPA:</label></div>
+        <div class="credit-col"><input type="text" id="result" readonly></div>
+        <div class="grade-col"></div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button id="submitGPA" type="button">Submit</button>
+        <button id="resetGPA" type="button">Reset</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="aum-footer">
+    <div class="footer-left">
+      <p>7400 East Drive<br>Montgomery, AL 36117</p>
+      <p>Local: 334-244-3000<br>Toll-Free: 800-227-2649</p>
+    </div>
+
+    <div class="footer-center">
+      <p>© 2025 Your Name</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="#"><img src="images/twt.jpeg" alt="Twitter"></a>
+      <a href="#"><img src="images/pinterest-logo.png" alt="Pinterest"></a>
+      <a href="#"><img src="images/facebook-social-network-logo.png" alt="Facebook"></a>
+    </div>
+  </footer>
+
+</main>
+
+<script src="GPA.js"></script>
+</body>
+</html>

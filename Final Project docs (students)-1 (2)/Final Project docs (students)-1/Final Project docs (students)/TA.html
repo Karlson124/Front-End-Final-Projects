@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TA Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main>
+
+  <!-- Header Section -->
+  <header class="header">
+    <img src="images/logo.png" class="header-logo" alt="Logo">
+
+    <div class="header-main">
+      <h1>Computer Science Department</h1>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="description.html">Program Description</a></li>
+          <li><a href="TA.html" class="active">TA Application</a></li>
+          <li><a href="GPA.html">GPA Calculator</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TA Application Form Section -->
+  <section class="ta-wrapper">
+    <div class="ta-form-box">
+
+      <h1>Teaching Assistant Application Form</h1>
+
+      <h2>Applicant Information</h2>
+
+      <form class="ta-form" action="survey_data.html" method="get">
+
+        <div class="form-row">
+          <label for="firstname">First Name:</label>
+          <input type="text" name="firstname" id="firstname" required>
+        </div>
+
+        <div class="form-row">
+          <label for="lastname">Last Name:</label>
+          <input type="text" name="lastname" id="lastname" required>
+        </div>
+
+        <div class="form-row">
+          <label for="studentid">Student ID:</label>
+          <input type="text" name="studentid" id="studentid" required>
+        </div>
+        
+        <div class="form-row">
+          <label>Gender:</label>
+          <div class="gender-box">
+            <span>M</span>
+            <input type="checkbox" name="gender_male" id="male">
+        
+            <span>F</span>
+            <input type="checkbox" name="gender_female" id="female">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="gpa">GPA:</label>
+          <input type="text" class="gpa-box" name="gpa" id="gpa" required>
+        </div>
+
+        <div class="form-row">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments"></textarea>
+        </div>
+
+        <h2 class="thankyou">Thank you for completing the application!</h2>
+
+        <div class="btn-row">
+          <button type="submit" class="submit-btn">Submit</button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="aum-footer">
+    <div class="footer-left">
+      <p>7400 East Drive<br>Montgomery, AL 36117</p>
+      <p>Local: 334-244-3000<br>Toll-Free: 800-227-2649</p>
+    </div>
+
+    <div class="footer-center">
+      <p>© 2025 Computer Science Department</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="#"><img src="images/twt.jpeg" alt="Twitter"></a>
+      <a href="#"><img src="images/pinterest-logo.png" alt="Pinterest"></a>
+      <a href="#"><img src="images/facebook-social-network-logo.png" alt="Facebook"></a>
+    </div>
+  </footer>
+
+</main>
+
+</body>
+</html>
